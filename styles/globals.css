@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation";
+
+h5 {
+  font-family: Rancho;
+  font-size: 60px;
+  margin: 40px 0;
+  text-align: center;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {

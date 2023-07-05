@@ -8,8 +8,6 @@ import TextGradientComponent from '@/components/AnimatedText';
 export default function HomePage() {
   var ReactRotatingText = require('react-rotating-text');
 
-
-
   return (
     
     <div id="home" className='w-full h-screen text-center'>
@@ -18,18 +16,21 @@ export default function HomePage() {
             <h1 className='py-4 text-gray-700'>Hi, We are <span className="text-[#5651e5]"><ReactRotatingText items={['Clodron', 'Your Marketing Partner', 'Your Web Agency']} /></span></h1>
             <TextGradientComponent />
             <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-dark'>
+              <Link href="https://linkedin.com/in/berke-guleryuz/" target="_blank">
+              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-dark'>
                 <FaLinkedinIn />
               </div>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <FaGithub />
-              </div>
+              </Link>
+              <Link href="berkeguleryuz@gmail.com " target="_blank">
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <AiOutlineMail />
               </div>
+              </Link>
+              <Link href="/#contact">
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <BsFillPersonLinesFill />
               </div>
+              </Link>
             </div>
         </div>
       </div>
